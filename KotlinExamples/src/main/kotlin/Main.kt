@@ -1,3 +1,10 @@
+import com.vshpynta.devices.v2.findByName
+import com.vshpynta.devices.v2.Device as DeviceV2
+import com.vshpynta.devices.v2.DeviceRegistry as DeviceRegistryV2
+import com.vshpynta.devices.v2.Lamp as LampV2
+import com.vshpynta.devices.v2.Speaker as SpeakerV2
+import com.vshpynta.devices.v2.Thermostat as ThermostatV2
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
@@ -11,6 +18,8 @@ fun main() {
         // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
         println("i = $i")
     }
+
+    println("------ Devices V1: -----")
 
     DeviceRegistry.register(Lamp.create("white"));
     DeviceRegistry.register(Lamp.Companion.create("black"));
@@ -34,4 +43,16 @@ fun main() {
     Speaker.Settings.defaultVolume = 50
     println("Speaker.Settings.defaultStyle: ${Speaker.Settings.defaultStyle}")
     println("Speaker.Settings.defaultVolume: ${Speaker.Settings.defaultVolume}")
+
+    println("------ Devices V2: -----")
+
+    DeviceRegistryV2.register(LampV2.create("Desk Lamp"))
+    DeviceRegistryV2.register(SpeakerV2.create("Kitchen Speaker", 10))
+    DeviceRegistryV2.register(ThermostatV2.create(name = "Living Room Thermostat", temperature = 19.5))
+    DeviceRegistryV2.register(ThermostatV2.create(name = "Outdoor Thermostat", temperature = ThermostatV2.Setting.minTemperature))
+    DeviceRegistryV2.register(ThermostatV2.create(name = "Sauna Thermostat", temperature = ThermostatV2.Setting.maxTemperature))
+
+    println(DeviceRegistryV2.summary())
+    println("Find by name: ${DeviceRegistryV2.findByName("Desk Lamp")}")
+    DeviceRegistryV2.listAll().forEach(DeviceV2::use)
 }
