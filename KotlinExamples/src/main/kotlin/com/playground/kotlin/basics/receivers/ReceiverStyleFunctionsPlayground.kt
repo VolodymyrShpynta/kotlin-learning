@@ -1,4 +1,4 @@
-package examples.receivers
+package com.playground.kotlin.basics.receivers
 
 import java.util.concurrent.locks.Lock
 import java.util.concurrent.locks.ReentrantLock

@@ -1,3 +1,5 @@
+package com.playground.kotlin.concurrency.coroutines
+
 /**
  * Coroutines Playground
  *
@@ -24,7 +26,7 @@ import kotlinx.coroutines.withTimeoutOrNull
 import kotlin.time.Duration.Companion.milliseconds
 
 /** Epoch used to compute relative times for [log]. */
-private var zeroTime = System.currentTimeMillis()
+internal var zeroTime = System.currentTimeMillis()
 
 /**
  * Logs a message with: elapsedMillis [threadName] message.

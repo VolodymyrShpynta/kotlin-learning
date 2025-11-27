@@ -1,3 +1,5 @@
+package com.playground.kotlin.concurrency.flows
+
 /**
  * Kotlin Flow Playground – Demonstrates cold flows, hot flows, SharedFlow, StateFlow, shareIn, stateIn, and related concurrency/backpressure patterns.
  *
@@ -25,6 +27,7 @@
  *
  * Usage: Comment/uncomment demo calls in [main] to run them individually for focused experimentation.
  */
+import com.playground.kotlin.concurrency.coroutines.log
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

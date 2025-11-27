@@ -1,9 +1,15 @@
-import com.vshpynta.devices.v2.findByName
-import com.vshpynta.devices.v2.Device as DeviceV2
-import com.vshpynta.devices.v2.DeviceRegistry as DeviceRegistryV2
-import com.vshpynta.devices.v2.Lamp as LampV2
-import com.vshpynta.devices.v2.Speaker as SpeakerV2
-import com.vshpynta.devices.v2.Thermostat as ThermostatV2
+import com.playground.kotlin.oop.core.devices.v1.Device
+import com.playground.kotlin.oop.core.devices.v1.DeviceRegistry
+import com.playground.kotlin.oop.core.devices.v1.Lamp
+import com.playground.kotlin.oop.core.devices.v1.Speaker
+import com.playground.kotlin.oop.core.devices.v1.countDevicesOfType
+import com.playground.kotlin.oop.core.devices.v1.createDefault
+import com.playground.kotlin.oop.core.devices.v2.findByName
+import com.playground.kotlin.oop.core.devices.v2.Device as DeviceV2
+import com.playground.kotlin.oop.core.devices.v2.DeviceRegistry as DeviceRegistryV2
+import com.playground.kotlin.oop.core.devices.v2.Lamp as LampV2
+import com.playground.kotlin.oop.core.devices.v2.Speaker as SpeakerV2
+import com.playground.kotlin.oop.core.devices.v2.Thermostat as ThermostatV2
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.

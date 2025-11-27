@@ -1,3 +1,5 @@
+package com.playground.kotlin.concurrency
+
 /**
  * Coroutines & Flows Testing Showcase
  *

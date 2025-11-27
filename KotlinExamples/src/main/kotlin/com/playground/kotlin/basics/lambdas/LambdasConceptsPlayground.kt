@@ -1,3 +1,5 @@
+package com.playground.kotlin.basics.lambdas
+
 /**
  * A functional (SAM) interface representing a predicate over [Int].
  *

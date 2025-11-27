@@ -1,0 +1,13 @@
+package com.playground.kotlin.oop.core.devices.v1
+
+/**
+ * Abstract base class representing a generic device.
+ *
+ * @property name The name of the device.
+ */
+abstract class Device(val name: String) {
+    /**
+     * Abstract function to be implemented by subclasses to define how the device is used.
+     */
+    abstract fun use()
+}
